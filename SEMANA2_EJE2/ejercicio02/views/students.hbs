@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eeeeee;
+        }
+
+        .aprobado {
+            background-color: lightgreen;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Lista de estudiantes</h1>
+
+    <table>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Nota</th>
+        </tr>
+
+        {{#each students}}
+
+        <tr>
+            <td>{{name}}</td>
+
+            {{#if highlight}}
+                <td class="aprobado">{{grade}}</td>
+            {{else}}
+                <td>{{grade}}</td>
+            {{/if}}
+
+        </tr>
+
+        {{/each}}
+
+    </table>
+
+</body>
+</html>
