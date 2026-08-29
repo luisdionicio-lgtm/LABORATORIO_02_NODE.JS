@@ -63,7 +63,20 @@ Si faltan, la API responde con:
 cd "C:/Users/Luis Angel/LABORATORIO_02_NODE.JS/SEMANA2_EJE3/ejercicio03"
 node main.js
 ```
+### LISTADO:
+Listar por estado
+http://localhost:4000/ListByStatus
+'
+{
+  "status": "Activo"
+}
 
+http://localhost:4000/ListByStatus
+
+{
+  "status": "Activo"
+}
+'
 ### Importante
 
 - Los datos se guardan en memoria.
